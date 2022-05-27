@@ -93,8 +93,12 @@ const input = () => {
                 <hr />
                 { (showFormMessage === true ) && 
                 <div>
-                  { formMessageType === 'error' && `Error: ${formMessage} ` } 
-                  { formMessageType === 'success' && `Success: ${formMessage} `} 
+                  <div className="alert alert-danger" role="alert">
+                    { formMessageType === 'error' && `Error: ${formMessage} ` } 
+                  </div>
+                  <div className="alert alert-success" role="alert">
+                    { formMessageType === 'success' && `Success: ${formMessage} `} 
+                  </div>
                 </div>
                 }
                 <div style= {{

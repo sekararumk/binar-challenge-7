@@ -3,6 +3,11 @@
   padding-bottom: 15px;
   background-color: #FFF59D;
 }
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 
 .padding_top {
   padding-top: 15px;
@@ -13,8 +18,9 @@
   border-style: dashed;
   height: 15vh;
 }
+
 .list {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .text_dropzone {
@@ -22,8 +28,18 @@
   text-align: center;
 }
 
-.text_style{
+.text_style {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text_title {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: bold;
+}
+
+.text_student{
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 16px;
 }
 
 .text_form{
@@ -32,7 +48,7 @@
 }
 
 .list {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .card {

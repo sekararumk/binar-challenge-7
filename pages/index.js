@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 import axios from 'axios';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
@@ -38,7 +38,7 @@ export default function Home() {
               <div className={styles.padding_top}>
                 <center><h4 className={styles.text_style}>Home</h4></center>
                 <hr />
-                <div className={`col-md- ${styles['container']}`}>
+                <div className={styles.container}>
                 { students.map( (student) => {
                   return (
                     <>
@@ -47,12 +47,12 @@ export default function Home() {
                         <Zoom><img src={student.attributes.photo.data.attributes.url} className="card-img-top" width="200" /></Zoom>
                       }
                         <div className="card-body">
-                          <center><h4 className={`card-title ${styles['card_title']} ${styles['text_style']}`}>Data Form</h4></center>
-                          <h5 className={styles.text_style}>First Name : {student.attributes.firstname}</h5>
-                          <h5 className={styles.text_style}>Last Name : {student.attributes.lastname}</h5>
-                          <h5 className={styles.text_style}>Location : {student.attributes.location}</h5>
+                          <center><h4 className={`card-title ${styles['card_title']} ${styles['text_title']}`}>Data Form</h4></center>
+                          <h5 className={styles.text_student}>First Name : {student.attributes.firstname}</h5>
+                          <h5 className={styles.text_student}>Last Name : {student.attributes.lastname}</h5>
+                          <h5 className={styles.text_student}>Location : {student.attributes.location}</h5>
                           <div className="d-grid gap-2 d-md-flex mt-4 mb-2 justify-content-md-end">
-                            <button onClick={() => router.push(`/student/${student.id}`)} key={student.id} className="btn btn-dark">See detail</button>
+                            <button onClick={() => router.push(`/students/${student.id}`)} key={student.id} className="btn btn-dark">See detail</button>
                           </div>
                         </div>
                       </div>
