@@ -1,8 +1,9 @@
 .header {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   background-color: #FFF59D;
 }
+
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -18,11 +19,6 @@
   border-style: dashed;
   height: 15vh;
 }
-
-.list {
-  text-decoration: none !important;
-}
-
 .text_dropzone {
   padding-top: 35px;
   text-align: center;
@@ -47,8 +43,15 @@
   font-weight: bold;
 }
 
-.list {
+.ul {
+  margin-top: 10px;
+}
+
+.list a{
   text-decoration: none !important;
+  color: black;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  padding-left: 18px;
 }
 
 .card {

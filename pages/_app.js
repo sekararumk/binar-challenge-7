@@ -13,11 +13,11 @@ function MyApp({ Component, pageProps }) {
                         <h2 className={styles.text_style}>Binar</h2>
                     </div>
                     <div className="col-auto">
-                        <ul className="nav-menu list-inline">
-                            <li className={`list-inline-item ${styles['listY']}`}><Link href="/">Home</Link></li>
-                            <li className="list-inline-item"><Link href="/input">Input</Link></li>
-                            <li className="list-inline-item"><Link href="/chart">Chart</Link></li>
-                            <li className="list-inline-item"><Link href="/download">Download</Link></li>
+                        <ul className={`nav-menu list-inline ${styles['ul']}`}>
+                            <li className={`list-inline-item ${styles['list']}`}><Link href="/">Home</Link></li>
+                            <li className={`list-inline-item ${styles['list']}`}><Link href="/input">Input</Link></li>
+                            <li className={`list-inline-item ${styles['list']}`}><Link href="/chart">Chart</Link></li>
+                            <li className={`list-inline-item ${styles['list']}`}><Link href="/download">Download</Link></li>
                         </ul>                    
                     </div>
                 </div>
